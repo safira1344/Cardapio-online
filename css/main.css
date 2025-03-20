@@ -30,6 +30,9 @@ html,body {
 b {
     font-family: 'PoppinsMedium', 'Rubik', 'sans-serif';
 }
+.color-primary {
+    color: var(--color-primary);
+}
 
 .nav-link {
     color: var(--color-black)!important;
@@ -62,4 +65,26 @@ b {
     border-radius: 15px;
     text-align: center;
     padding-top: 6px;
+}
+
+.banner {
+    padding-top: 110px;
+    padding-bottom: 200px;
+}
+
+.text-banner {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.text-banner h1 {
+    color: var(--color-black);
+    font-size: 60px;
+}
+
+.text-banner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
