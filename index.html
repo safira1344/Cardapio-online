@@ -23,16 +23,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto mr-auto">
               <li class="nav-item">
-                <a href="reservas" class="nav-link"><b>Reservas</b></a>
+                <a href="#reservas" class="nav-link"><b>Reservas</b></a>
               </li>
               <li class="nav-item">
-                <a href="servicos" class="nav-link"><b>Serviços</b></a>
+                <a href="#servicos" class="nav-link"><b>Serviços</b></a>
               </li>
               <li class="nav-item">
-                <a href="cardapios" class="nav-link"><b>Cardápio</b></a>
+                <a href="#cardapios" class="nav-link"><b>Cardápio</b></a>
               </li>
               <li class="nav-item">
-                <a href="depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
               </li>
             </ul>
             <a class="btn btn-white btn-icon">
@@ -458,6 +458,46 @@
         </div>
       </div>
     </footer>
+
+    <div class="model-full" id="modelCarrinho">
+
+      <div class="n header">
+        <div class="container">
+          <a class="btn btn-white btn-sm float-right">
+            Fechar
+          </a>
+          <div class="etapas">
+            <div class="etapa etapa1-active">1</div>
+            <div class="etapa etapa2">2</div>
+            <div class="etapa etapa3">3</div>
+          </div>
+          <p class="title-carrinho mt-4">
+            <b id="lbTituloEtapa">Seu carrinho:</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="n-body">
+        <div class="container">
+          <div id="itensCarrinho" class="row mr-0 ml-0">
+            <div class="col-12 item-carrinho">
+              <div class="img-produto">
+                <img src="img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" alt="Hambúrguer">
+              </div>
+
+              <div class="dados-produto">
+                <p class="title-produto"><b>Nome do produto</b></p>
+                <p class="price-produto"><b>R$ 149,90</b></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="n-footer"></div>
+
+    </div>
 
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/modernizr-3.5.0.min.js"></script>
