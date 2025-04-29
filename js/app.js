@@ -14,10 +14,12 @@ cardapio.eventos = {
 
 cardapio.metodos = {
     //obtem a lista de itens do cardápio
-    obterItensCardapio: () => {
+    obterItensCardapio: (categoria = 'burgers') => {
 
-        var filtro = MENU['burgers'];
+        var filtro = MENU[categoria];
         console.log(filtro);
+
+        $("#itensCardapio").html('')
 
         $.each(filtro, (i,e) => {
 
@@ -29,6 +31,12 @@ cardapio.metodos = {
             $("#itensCardapio").append(temp)
 
         })
+
+        //remove o ativo
+        $(".container-menu a").removeClass('active');
+
+        //seta o menu para ativo
+        $("#menu-" + categoria).addClass('active')
     },
 
 }
