@@ -120,6 +120,14 @@ cardapio.metodos = {
         }
     },
 
+    //atualiza o badge de totais dos botões "Meu carrinho"
+    atualizarBadgeTotal: () => {
+        var total = 0;
+        $.each(MEU_CARRINHO, (i,e) => {
+            
+        })
+    }
+
 }
 
 cardapio.templates = {
