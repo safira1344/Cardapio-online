@@ -92,7 +92,8 @@ cardapio.metodos = {
             let filtro = MENU[categoria];
 
             //obtem o item
-            let item = $.grep(filtro, (e,i) => { return e.id == id});
+            let item = $.grep(filtro, (e,i) => { 
+                return e.id == id});
 
             if (item.length > 0) {
 
@@ -102,15 +103,14 @@ cardapio.metodos = {
                 //caso já exista o item no carrinho, só altera a quantidade
                 if (existe.length > 0) {
                     let objIndex = MEU_CARRINHO.findIndex((obj => obj.id == id));
-                    MEU_CARRINHO[objIndex].qntd = MEU_CARRINHO[objIndex].qntd + qntdAtual;
-
+                    MEU_CARRINHO[objIndex].qntd += qntdAtual;
                 }
 
                 //caso ainda não exista o item no carrinho, adiciona ele
                 else {
 
                     item[0].qntd = qntdAtual;
-                    MEU_CARRINHO.push(item[0])
+                    MEU_CARRINHO.push(item[0]);
                 }
 
                 cardapio.metodos.mensagem('Item adicionado ao carrinho', 'green');
@@ -135,7 +135,7 @@ cardapio.metodos = {
             $(".container-total-carrinho").removeClass('hidden');
         }
         else {
-            $(".botao-carrinho").addClass('hidden')
+            $(".botao-carrinho").addClass('hidden');
             $(".container-total-carrinho").addClass('hidden');
         }
 
@@ -143,6 +143,19 @@ cardapio.metodos = {
 
     },
 
+    //abrir a modal de carrinho
+    abrirCarrinho: (abrir) => {
+
+        if(abrir) {
+            $("#modalCarrinho").removeClass('hidden');
+        }
+        else {
+            $("#modalCarrinho").addClass('hidden');
+
+        }
+    },
+
+    //mensagens
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
         let id = Math.floor(Date.now() * Math.random()).toString();
@@ -154,9 +167,11 @@ cardapio.metodos = {
         setTimeout(() => {
             $("#msg-" + id).removeClass('fadeInDown');
             $("#msg-" + id).addClass('fadeOutUp');
-            $("#msg-" + id).remove();
+            setTimeout(() => {
+                $("#msg-" + id).remove();
+            }, 800);
         },tempo)
-    }
+    },
 
 }
 
@@ -166,7 +181,7 @@ cardapio.templates = {
         <div class="col-3 mb-5">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
-                <img src="\${img}"/>
+                <img src="\${img}" />
                 </div>
                 <p class="title-produto text-center mt-4">
                 <b>\${nome}</b>
@@ -182,9 +197,9 @@ cardapio.templates = {
                 <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')">
                     <i class="fas fa-plus"></i>
                 </span>
-                <span class="btn btn-add">
-                    <i class="fa fa-shopping-bag"></i
-                ></span>
+                <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')">
+                    <i class="fa fa-shopping-bag"></i>
+                </span>
                 </div>
             </div>
         </div>
