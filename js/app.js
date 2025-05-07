@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 var cardapio = {};
 
-var MEU_CARRINHO = {};
+var MEU_CARRINHO = [];
 
 cardapio.eventos = {
 
@@ -171,7 +171,7 @@ cardapio.metodos = {
                 $("#msg-" + id).remove();
             }, 800);
         },tempo)
-    },
+    }
 
 }
 
