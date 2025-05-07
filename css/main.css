@@ -493,26 +493,26 @@ footer {
   flex-direction: column;
 }
 
-.n-header {
+.m-header {
   padding-bottom: 20px;
 }
 
-.n-body {
+.m-body {
   flex: 1;
   overflow: auto;
   overflow-x: hidden;
 }
 
-.n-body::-webkit-scrollbar {
+.m-body::-webkit-scrollbar {
   width: 6px;
   background: transparent;
 }
 
-.n-body::-webkit-scrollbar-thumb {
+.m-body::-webkit-scrollbar-thumb {
   background: var(--color-white);
 }
 
-.n-body::-webkit-scrollbar-track {
+.m-body::-webkit-scrollbar-track {
   background: transparent;
 }
 
