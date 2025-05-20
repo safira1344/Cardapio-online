@@ -470,6 +470,7 @@ cardapio.metodos = {
             var itens = '';
 
             $.each(MEU_CARRINHO, (i,e) => {
+
                 itens += `*${e.qntd}x* ${e.name} ....... R$ ${e.price.toFixed(2).replace('.',',')} \n`;
 
                 //último item
@@ -479,7 +480,7 @@ cardapio.metodos = {
 
                     //converte a URL
                     let encode = encodeURI(texto);
-                    let URl = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+                    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
 
                     $("#btnEtapaResumo").attr('href', URL);
                 }
