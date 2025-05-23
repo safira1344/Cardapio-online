@@ -10,5 +10,6 @@
         "html": false,
         "css": false,
         "python": true
-    }
+    },
+    "liveServer.settings.port": 5501
 }
