@@ -86,11 +86,11 @@
                 <a href="#cardapio" class="btn btn-yellow mt-4 mr-3">
                   Ver cardápio
                 </a>
-                <a href="#" class="btn btn-white btn-icon-left mt-4">
+                <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
                   <span class="icon-left">
                     <i class="fa fa-phone"></i>
                   </span>
-                  (79) 49500463
+                  (17) 99168-6069 
                 </a>
               </div>
             </div>
@@ -341,9 +341,9 @@
               </div>
             </div>
 
-            <a class="btn btn-sm btn-white btn-social mr-3 active">1</a>
-            <a class="btn btn-sm btn-white btn-social mr-3">2</a>
-            <a class="btn btn-sm btn-white btn-social">3</a>
+            <a id="btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
+            <a id="btnDepoimento-2"  class="btn btn-sm btn-white btn-social mr-3" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
+            <a id="btnDepoimento-3"  class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
           </div>
         </div>
       </div>
@@ -365,7 +365,7 @@
                     <br />
                     Reserve sua data e horário de forma simples e rápida.
                   </p>
-                  <a class="btn btn-yellow mt-4"> Fazer reserva </a>
+                  <a class="btn btn-yellow mt-4" href="#" id="btnReserva" target="_blank"> Fazer reserva </a>
                 </div>
 
                 <div class="col-5">
