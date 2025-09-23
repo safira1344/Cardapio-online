@@ -1,6 +1,6 @@
 # 🍽️ Cardápio Online
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-Finalizado-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Made with](https://img.shields.io/badge/Made%20with-HTML%2C%20CSS%2C%20JS-blue)
 
@@ -10,7 +10,7 @@
 
 ## 🚀 Demonstração
 
-🔗 [Acesse o projeto no GitHub Pages](https://safira1344.github.io/Cardapio-online/) *(se já publicado)*  
+🔗 [Acesse o projeto no Vercel](cardapio-online-xi-two.vercel.app) 
 
 📱 Layout adaptável para **desktop** e **mobile**.
 
@@ -43,19 +43,6 @@ O **Cardápio Online** foi criado para substituir os cardápios impressos e faci
 
 ---
 
-## 📂 Estrutura do Projeto
-
-Cardapio-online/
-│
-├── css/ → estilos do projeto
-├── js/ → scripts JavaScript
-├── fonts/ → fontes utilizadas
-├── img/ → imagens dos pratos / logos
-└── index.html → página principal
-
-
----
-
 ## ▶️ Como Executar Localmente
 
 1. Clone este repositório:
@@ -63,8 +50,9 @@ Cardapio-online/
    git clone https://github.com/safira1344/Cardapio-online.git
 
 2. Acesse a pasta do projeto:
+   ```bash
    cd Cardapio-online
 
-3. Abra o arquivo index.html no navegador. 🎉
+4. Abra o arquivo index.html no navegador. 🎉
 
 💡 Desenvolvido com dedicação por Fernanda Mirely
